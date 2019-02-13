@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		323FE0DE2213E3ED007A2BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FE0DD2213E3ED007A2BD5 /* AppDelegate.swift */; };
-		323FE0E02213E3ED007A2BD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FE0DF2213E3ED007A2BD5 /* ViewController.swift */; };
+		323FE0E02213E3ED007A2BD5 /* ParaTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FE0DF2213E3ED007A2BD5 /* ParaTVC.swift */; };
 		323FE0E32213E3ED007A2BD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323FE0E12213E3ED007A2BD5 /* Main.storyboard */; };
 		323FE0E52213E3ED007A2BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323FE0E42213E3ED007A2BD5 /* Assets.xcassets */; };
 		323FE0E82213E3ED007A2BD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323FE0E62213E3ED007A2BD5 /* LaunchScreen.storyboard */; };
+		323FE0F12213E5DE007A2BD5 /* ParaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FE0F02213E5DE007A2BD5 /* ParaCell.swift */; };
+		323FE0F42213E716007A2BD5 /* Image+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323FE0F32213E716007A2BD5 /* Image+Label.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		323FE0DA2213E3ED007A2BD5 /* ParallexEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallexEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		323FE0DD2213E3ED007A2BD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		323FE0DF2213E3ED007A2BD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		323FE0DF2213E3ED007A2BD5 /* ParaTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParaTVC.swift; sourceTree = "<group>"; };
 		323FE0E22213E3ED007A2BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		323FE0E42213E3ED007A2BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		323FE0E72213E3ED007A2BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		323FE0E92213E3ED007A2BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323FE0F02213E5DE007A2BD5 /* ParaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParaCell.swift; sourceTree = "<group>"; };
+		323FE0F32213E716007A2BD5 /* Image+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Label.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		323FE0DC2213E3ED007A2BD5 /* ParallexEffect */ = {
 			isa = PBXGroup;
 			children = (
+				323FE0F22213E6FE007A2BD5 /* service */,
+				323FE0EF2213E5BF007A2BD5 /* Views */,
 				323FE0DD2213E3ED007A2BD5 /* AppDelegate.swift */,
-				323FE0DF2213E3ED007A2BD5 /* ViewController.swift */,
+				323FE0DF2213E3ED007A2BD5 /* ParaTVC.swift */,
 				323FE0E12213E3ED007A2BD5 /* Main.storyboard */,
 				323FE0E42213E3ED007A2BD5 /* Assets.xcassets */,
 				323FE0E62213E3ED007A2BD5 /* LaunchScreen.storyboard */,
 				323FE0E92213E3ED007A2BD5 /* Info.plist */,
 			);
 			path = ParallexEffect;
+			sourceTree = "<group>";
+		};
+		323FE0EF2213E5BF007A2BD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				323FE0F02213E5DE007A2BD5 /* ParaCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		323FE0F22213E6FE007A2BD5 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				323FE0F32213E716007A2BD5 /* Image+Label.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323FE0E02213E3ED007A2BD5 /* ViewController.swift in Sources */,
+				323FE0E02213E3ED007A2BD5 /* ParaTVC.swift in Sources */,
 				323FE0DE2213E3ED007A2BD5 /* AppDelegate.swift in Sources */,
+				323FE0F42213E716007A2BD5 /* Image+Label.swift in Sources */,
+				323FE0F12213E5DE007A2BD5 /* ParaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +299,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G548L356GB;
 				INFOPLIST_FILE = ParallexEffect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.con.ParallexEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +315,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G548L356GB;
 				INFOPLIST_FILE = ParallexEffect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.con.ParallexEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
